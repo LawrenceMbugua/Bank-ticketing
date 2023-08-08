@@ -1,0 +1,107 @@
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+body {
+    font-size: 15pt;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+    background-image: url(img1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    transition: 2s;
+    animation: animate 25s infinite;
+}
+
+.ticketsContainer {
+  
+  width: 0vw;
+  height: 100vh;
+  opacity: .7;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  transition: 2s
+}
+
+.ticketsContainer p {
+  opacity: 1
+}
+
+.ticket {
+  border-top: 1px solid yellow;
+  padding: 4vw 3vw;
+  display: grid;
+  place-items: center;
+  font-size: 4vw;
+  font-weight: 1000;
+  color: white;
+  background: maroon;
+  height: 4vh;
+  
+}
+
+.left {
+  
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  
+}
+
+.bankName {
+  position: absolute;
+  top: 25%;
+  left: 10vw;
+  text-align: center;
+  font-size: 8vw;
+  color: maroon;
+  font-weight: bold;
+  font-family: sans-serif;
+  opacity: 0;
+  transition: 2s
+}
+
+button {
+  padding:2vw 5vw;
+  font-size: 4vw;
+  
+  position: absolute;
+  left: 10vw;
+  top: 80vh;
+  color: white;
+  font-weight: bold;
+  border: 1px solid yellow;
+  cursor: pointer;
+  background: maroon;
+  border-radius: 0px;
+  opacity: 0;
+  transition: 3s
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-image: url(img1.jpeg)
+  }
+  
+  33.3% {
+     background-image: url(img2.jpeg)
+  }
+  
+  66.6% {
+    background-image: url(img3.jpeg)
+  }
+    
+
+}
