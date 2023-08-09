@@ -8,7 +8,7 @@ console.log(doc)
 let ticketsContainer = document.getElementById("ticketsContainer")
 let btn = document.querySelector('button')
 let bankName = document.querySelector('.bankName')
-let microseconds = 60000
+let microseconds = 1000
 let tickets = [1,2,3,4,5,6,7,8,9,10,11,12]
 let imbooked = false
 
